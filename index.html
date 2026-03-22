@@ -307,7 +307,9 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 <div class="tab-nav">
   <button class="tab-btn active" onclick="switchTab('tab1',this)">📊 ยอดขายสาขา</button>
   <button class="tab-btn" onclick="switchTab('tab2',this)">📦 Stock Holding KPI</button>
-</div>
+</div
+  <button class="tab-btn" onclick="switchTab('tab3',this)">👥 Manpower</button>
+>
 
 <div id="tab1" class="tab-pane active">
 <div class="main">
@@ -639,7 +641,50 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   Yuedpao · Group 4 · Stock Holding KPI · ข้อมูล Update 22 มีนาคม 2569 &nbsp;·&nbsp;
   Stock Holding = มูลค่า Stock ÷ AVE SALE/เดือน &nbsp;·&nbsp; KPI Target ≤ 1.0x
 </div>
-</div><!-- end tab2 -->
+</div>
+  <div id="tab3" class="tab-pane">
+    <div class="card" style="margin:16px 24px;">
+      <div class="cd"><span class="cd-l">👥 Manpower & ยอดขาย · 15 สาขา · 1–22 มี.นาคม 2569</span><span class="cd-r">รวมพนักงาน 48 อัตรา &middot; อยู่จริง 42 &middot; Part-time 7 &middot; <span class="neg">ขาด (6)</span></span></div>
+      <div style="overflow-x:auto;">
+        <table class="tbl" style="width:100%;">
+          <thead>
+            <tr>
+              <th class="l" rowspan="2">#</th>
+              <th class="l" rowspan="2">สาขา</th>
+              <th colspan="3" style="text-align:center;background:#fef9c3;color:#92400e;padding:6px;border-bottom:0;">📊 SALE (1–22 มี.นาคม)</th>
+              <th colspan="5" style="text-align:center;background:#e0f2fe;color:#0369a1;padding:6px;border-bottom:0;">👥 Employee</th>
+            </tr>
+            <tr>
+              <th style="background:#fef9c3;">เป้าหมาย<br><small>(หลัง VAT)</small></th>
+              <th style="background:#fef9c3;">ยอดขาย<br><small>(หลัง VAT)</small></th>
+              <th style="background:#fef9c3;">%</th>
+              <th style="background:#e0f2fe;">Full Staff</th>
+              <th style="background:#e0f2fe;">Actual Staff</th>
+              <th style="background:#e0f2fe;">Part-time</th>
+              <th style="background:#e0f2fe;">ขาด</th>
+              <th style="background:#e0f2fe;text-align:left;">Remark</th>
+            </tr>
+          </thead>
+          <tbody>            <tr><td class="l"><span class="rn nc1">1</span></td><td class="l">Central ลาดพร้าว</td><td>฿2,100,000</td><td>฿1,589,321</td><td class="warn">75.7%</td><td>4</td><td>4</td><td>1</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc2">2</span></td><td class="l">Future Park (Flagship)</td><td>฿2,100,000</td><td>฿1,631,374</td><td class="warn">77.7%</td><td>4</td><td>4</td><td>1</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc3">3</span></td><td class="l">The Mall งามวงศ์วาน</td><td>฿1,600,000</td><td>฿1,201,774</td><td class="warn">75.1%</td><td>5</td><td>3</td><td>1</td><td class="neg">(2)</td><td class="neg">ขาด 2 อัตรา</td></tr>
+            <tr><td class="l"><span class="rn nc4">4</span></td><td class="l">Central นครสวรรค์</td><td>฿1,100,000</td><td>฿838,171</td><td class="warn">76.2%</td><td>4</td><td>3</td><td>–</td><td class="neg">(1)</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc5">5</span></td><td class="l">Central เชียงราย</td><td>฿1,100,000</td><td>฿757,796</td><td class="neg">68.9%</td><td>3</td><td>3</td><td>1</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc6">6</span></td><td class="l">Robinson ลาดกระบัง</td><td>฿1,100,000</td><td>฿772,584</td><td class="warn">70.2%</td><td>3</td><td>3</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc7">7</span></td><td class="l">Central ชลบุรี</td><td>฿1,050,000</td><td>฿819,345</td><td class="warn">78.0%</td><td>3</td><td>3</td><td>1</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc8">8</span></td><td class="l">Central ลำปาง</td><td>฿950,000</td><td>฿599,918</td><td class="neg">63.1%</td><td>3</td><td>3</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc9">9</span></td><td class="l">Robinson สมุทรปราการ</td><td>฿900,000</td><td>฿558,087</td><td class="neg">62.0%</td><td>3</td><td>2</td><td>–</td><td class="neg">(1)</td><td class="neg">ขาด 1 อัตรา</td></tr>
+            <tr><td class="l"><span class="rn nc10">10</span></td><td class="l">Big C ราชดำริ</td><td>฿900,000</td><td>฿539,172</td><td class="neg">59.9%</td><td>4</td><td>2</td><td>1</td><td class="neg">(2)</td><td class="neg">ขาด 1 อัตรา</td></tr>
+            <tr><td class="l"><span class="rn nc11">11</span></td><td class="l">Central พิษณุโลก</td><td>฿800,000</td><td>฿898,102</td><td class="pos">112.3%</td><td>4</td><td>4</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc12">12</span></td><td class="l">Passione ระยอง</td><td>฿750,000</td><td>฿476,282</td><td class="neg">63.5%</td><td>2</td><td>2</td><td>1</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc13">13</span></td><td class="l">Robinson มุกดาหาร</td><td>฿700,000</td><td>฿367,741</td><td class="neg">52.5%</td><td>4</td><td>4</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc14">14</span></td><td class="l">BTS สยาม</td><td>฿300,000</td><td>฿179,452</td><td class="neg">59.8%</td><td>1</td><td>1</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr>
+            <tr><td class="l"><span class="rn nc15">15</span></td><td class="l">BTS หมอชิต</td><td>฿250,000</td><td>฿114,000</td><td class="neg">45.6%</td><td>1</td><td>1</td><td>–</td><td>–</td><td class="mp-ok">เพียงพอ</td></tr></tbody>
+          <tfoot><tr class="mp-total"><td colspan="2" class="l">รวม 15 สาขา</td><td>฿15,700,000</td><td>฿11,343,119</td><td class="warn">72.2%</td><td>48</td><td>42</td><td>7</td><td class="neg">(6)</td><td>–</td></tr></tfoot>
+        </table>
+      </div>
+    </div>
+  </div><!-- end tab3 --><!-- end tab2 -->
 
 <div class="footer" id="footer1">
   Yuedpao · Group 4 · Dashboard March 2026 · ข้อมูล ณ 22 มีนาคม 2569 &nbsp;·&nbsp;
