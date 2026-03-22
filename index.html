@@ -146,9 +146,11 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .tbl{width:100%;border-collapse:collapse;}
 .tbl thead th{
   font-size:8.5px;color:#94a3b8;text-transform:uppercase;letter-spacing:.4px;
-  padding:0 6px 9px;border-bottom:2px solid #e2e8f0;text-align:right;white-space:nowrap;font-weight:700;
+  padding:6px 6px 9px;border-bottom:2px solid #e2e8f0;text-align:right;white-space:nowrap;font-weight:700;
+  position:sticky;top:0;background:#f8fafc;z-index:10;
 }
 .tbl thead th:first-child,.tbl thead th.l{text-align:left;}
+.tbl thead th small{font-size:7px;display:block;font-weight:400;text-transform:none;letter-spacing:0;opacity:.75;margin-top:2px;}
 .tbl thead th.hb{color:#1e40af;}
 .tbl thead th.ha{color:#166534;}
 .tbl thead th.ht{color:#0f766e;}
@@ -171,7 +173,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .p-y{background:#fef3c7;color:#92400e;}.p-r{background:#fee2e2;color:#991b1b;}
 .pos{color:#16a34a!important;font-weight:700;}.neg{color:#dc2626!important;font-weight:700;}.neu{color:#94a3b8;}
 
-.scrollable{max-height:315px;overflow-y:auto;padding-right:3px;}
+.scrollable{padding-right:3px;}
 .scrollable::-webkit-scrollbar{width:3px;}
 .scrollable::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:2px;}
 
@@ -516,19 +518,18 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
         <thead>
           <tr>
             <th class="l">สาขา</th>
-            <th class="hb">Target หลังVAT</th>
-            <th>% ทำได้</th>
-            <th class="hb">ยอดขาย ก่อนVAT</th>
-            <th class="ha">ยอดขาย หลังVAT</th>
-            <th class="hb">EST สิ้นเดือน</th>
-            <th class="ht">FEB (หลังVAT)</th>
-            <th class="ht">MAR vs FEB</th>
-            <th class="ht">%เปลี่ยน</th>
-            <th class="hp">W:23ก.พ.–1มี.</th>
-            <th class="hp">W:2–8 มี.</th>
-            <th class="hp">W:9–15 มี.</th>
-            <th>YoY</th>
-            <th>Status</th>
+            <th class="hb">เป้าหมาย<br><small>(หลัง VAT)</small></th>
+            <th class="hb">ยอดขายรวม<br><small>(ก่อนหัก VAT)</small></th>
+            <th class="ha">ยอดขายสุทธิ<br><small>(หลัง VAT)</small></th>
+            <th>% บรรลุเป้า</th>
+            <th>เทียบปีก่อน<br><small>(YoY)</small></th>
+            <th class="ht">มีนาฯ vs ก.พ.</th>
+            <th class="ht">% เปลี่ยน</th>
+            <th class="hp">สัปดาห์ที่ 1<br><small>(23ก.พ.–1มี.)</small></th>
+            <th class="hp">สัปดาห์ที่ 2<br><small>(2–8 มี.)</small></th>
+            <th class="hp">สัปดาห์ที่ 3<br><small>(9–15 มี.)</small></th>
+            <th class="hb">คาดการณ์<br><small>(EST)</small></th>
+            <th>สถานะ</th>
           </tr>
         </thead>
         <tbody id="tblBody"></tbody>
@@ -945,21 +946,21 @@ ts.forEach((b,i)=>{
   const yyc=b.yoyPct===null?'neu':b.yoyPct>=0?'pos':'neg';
   const diftAmt=b.dift>=0?'+'+fmt(b.dift):'-'+fmt(Math.abs(b.dift));
   tb.innerHTML+=`<tr>
-    <td class="l"><span class="rn ${nc}">${rk}</span>${b.sh}</td>
-    <td style="color:#1e3a8a;font-weight:700;">฿${fmt(b.tA)}</td>
-    <td><span class="pill ${pillC(b.pct)}">${p}</span></td>
-    <td style="color:#1d4ed8;font-weight:600;">฿${fmt(b.aB)}</td>
-    <td style="color:#166534;font-weight:600;">฿${fmt(b.aA)}</td>
-    <td style="color:#92400e;font-weight:600;">฿${fmt(b.est)}</td>
-    <td style="color:#0f766e;font-weight:600;">฿${fmt(b.feb)}</td>
-    <td class="${b.dift>=0?'pos':'neg'}">${diftAmt}</td>
-    <td class="${dpc}">${dp}</td>
-    <td style="color:#4338ca;font-weight:600;">฿${fmt(b.w1)}</td>
-    <td style="color:#6d28d9;font-weight:600;">฿${fmt(b.w2)}</td>
-    <td style="color:#7c3aed;font-weight:600;">฿${fmt(b.w3)}</td>
-    <td class="${yyc}">${yy}</td>
-    <td>${stTag(b.st)}</td>
-  </tr>`;
+    
+            <td class="l"><span class="rn ${nc}">${rk}</span>${b.sh}</td>
+            <td style="color:#1e3a8a;font-weight:700;">฿${fmt(b.tA)}</td>
+            <td style="color:#1d4ed8;font-weight:600;">฿${fmt(b.aB)}</td>
+            <td style="color:#166534;font-weight:600;">฿${fmt(b.aA)}</td>
+            <td><span class="pill ${pillC(b.pct)}">${p}</span></td>
+            <td class="${yyc}">${yy}</td>
+            <td class="${b.dift>=0?'pos':'neg'}">${diftAmt}</td>
+            <td class="${dpc}">${dp}</td>
+            <td style="color:#4338ca;font-weight:600;">฿${fmt(b.w1)}</td>
+            <td style="color:#6d28d9;font-weight:600;">฿${fmt(b.w2)}</td>
+            <td style="color:#7c3aed;font-weight:600;">฿${fmt(b.w3)}</td>
+            <td style="color:#92400e;font-weight:600;">฿${fmt(b.est)}</td>
+            <td>${stTag(b.st)}</td>
+</tr>`;
 });
 
 // ── TAB SWITCHING ──
