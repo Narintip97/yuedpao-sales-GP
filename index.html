@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Group 4 – Yuedpao Mar 2026</title>
+<title>Dashboard Group 4 â Yuedpao Mar 2026</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 
-/* ───── HEADER ───── */
+/* âââââ HEADER âââââ */
 .header{
   background:linear-gradient(135deg,#0c1929 0%,#162032 60%,#0f2744 100%);
   border-bottom:3px solid #f59e0b;
@@ -32,7 +32,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 
 .main{padding:18px 24px 26px;}
 
-/* ───── KPI CARDS ───── */
+/* âââââ KPI CARDS âââââ */
 .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:14px;}
 .kpi{
   background:#fff;border-radius:12px;padding:16px 18px;position:relative;overflow:hidden;
@@ -58,7 +58,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .vt.a{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;}
 .kpi-ico{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:30px;opacity:.07;}
 
-/* ───── STATUS SUMMARY ───── */
+/* âââââ STATUS SUMMARY âââââ */
 .status-row{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:14px;}
 .sc{
   background:#fff;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px;
@@ -76,11 +76,11 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .sc-lbl{font-size:12px;font-weight:700;color:#0f172a;margin-top:1px;}
 .sc-desc{font-size:9.5px;color:#94a3b8;margin-top:2px;}
 
-/* ───── GRID ───── */
+/* âââââ GRID âââââ */
 .row-3{display:grid;grid-template-columns:1.1fr 1.4fr 1fr;gap:13px;margin-bottom:14px;}
 .row-2a{display:grid;grid-template-columns:1.35fr 1fr;gap:13px;margin-bottom:14px;}
 
-/* ───── CARD ───── */
+/* âââââ CARD âââââ */
 .card{
   background:#fff;border-radius:12px;padding:17px 19px;
   box-shadow:0 1px 3px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.05);
@@ -98,7 +98,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .card-title.purple::before{background:linear-gradient(180deg,#5b21b6,#a78bfa);}
 .card-title.green::before{background:linear-gradient(180deg,#065f46,#34d399);}
 
-/* ───── VAT SUMMARY BOXES ───── */
+/* âââââ VAT SUMMARY BOXES âââââ */
 .vat-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
 .vbox{border-radius:10px;padding:12px 14px;}
 .vbox.b{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #bfdbfe;}
@@ -113,7 +113,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .vbox.b .vbox-pct{color:#2563eb;}
 .vbox.a .vbox-pct{color:#16a34a;}
 
-/* ───── DONUT ───── */
+/* âââââ DONUT âââââ */
 .donut-wrap{position:relative;width:200px;height:200px;margin:0 auto;}
 .donut-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;}
 .donut-center .big{font-size:30px;font-weight:800;color:#0f172a;line-height:1;}
@@ -124,7 +124,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .leg-name{flex:1;color:#64748b;}
 .leg-val{font-weight:800;color:#0f172a;font-size:12px;}
 
-/* ───── PROGRESS ───── */
+/* âââââ PROGRESS âââââ */
 .prog-list{display:flex;flex-direction:column;gap:10px;}
 .prog-hdr{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;margin-bottom:3px;}
 .prog-name{font-weight:700;color:#0f172a;max-width:185px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -133,7 +133,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .prog-bar{height:8px;background:#f1f5f9;border-radius:999px;overflow:hidden;}
 .prog-fill{height:100%;border-radius:999px;transition:width .6s ease;}
 
-/* ───── TAGS / PILLS ───── */
+/* âââââ TAGS / PILLS âââââ */
 .tag{display:inline-block;padding:1px 7px;border-radius:999px;font-size:9px;font-weight:700;}
 .tag-on{background:#dcfce7;color:#166534;border:1px solid #bbf7d0;}
 .tag-risk{background:#fef3c7;color:#92400e;border:1px solid #fde68a;}
@@ -142,7 +142,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .tag-a{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;}
 .tag-gray{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0;}
 
-/* ───── TABLE ───── */
+/* âââââ TABLE âââââ */
 .tbl{width:100%;border-collapse:collapse;}
 .tbl thead th{
   font-size:8.5px;color:#94a3b8;text-transform:uppercase;letter-spacing:.4px;
@@ -180,7 +180,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   background:#f8fafc;border-top:1px solid #e2e8f0;margin-top:0;letter-spacing:.2px;
 }
 
-/* ───── TABS ───── */
+/* âââââ TABS âââââ */
 .tab-nav{
   background:#fff;border-bottom:2px solid #e2e8f0;
   padding:0 24px;display:flex;gap:0;
@@ -195,7 +195,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .tab-pane{display:none;}
 .tab-pane.active{display:block;}
 
-/* ───── STOCK KPI SPECIFIC ───── */
+/* âââââ STOCK KPI SPECIFIC âââââ */
 .kpi2{
   background:#fff;border-radius:12px;padding:16px 18px;position:relative;overflow:hidden;
   box-shadow:0 1px 3px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.05);
@@ -239,7 +239,7 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 .stk-na{background:#f1f5f9;color:#64748b;border:1px solid #e2e8f0;}
 .row-stk{display:grid;grid-template-columns:1.4fr 1fr;gap:13px;margin-bottom:14px;}
 
-/* ───── MANAGER STRIP ───── */
+/* âââââ MANAGER STRIP âââââ */
 .mgr-strip{
   background:linear-gradient(135deg,#0c1929 0%,#0f2744 100%);
   border-radius:14px;padding:22px 32px;margin-bottom:14px;
@@ -288,23 +288,23 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 <!-- HEADER -->
 <div class="header">
   <div class="header-left">
-    <h1>👕 Dashboard · Group 4 · Yuedpao</h1>
-    <p>ยอดขาย 1–22 มีนาคม 2569 &nbsp;·&nbsp; 15 สาขา &nbsp;·&nbsp; ก่อนหักVAT & หลังหักVAT &nbsp;·&nbsp; รายเดือน &nbsp;·&nbsp; รายสัปดาห์</p>
+    <h1>ð Dashboard Â· Group 4 Â· Yuedpao</h1>
+    <p>à¸¢à¸­à¸à¸à¸²à¸¢ 1â22 à¸¡à¸µà¸à¸²à¸à¸¡ 2569 &nbsp;Â·&nbsp; 15 à¸ªà¸²à¸à¸² &nbsp;Â·&nbsp; à¸à¹à¸­à¸à¸«à¸±à¸VAT & à¸«à¸¥à¸±à¸à¸«à¸±à¸VAT &nbsp;Â·&nbsp; à¸£à¸²à¸¢à¹à¸à¸·à¸­à¸ &nbsp;Â·&nbsp; à¸£à¸²à¸¢à¸ªà¸±à¸à¸à¸²à¸«à¹</p>
   </div>
   <div class="badge-wrap">
     <span class="badge navy">GROUP 4</span>
     <span class="badge gold">MARCH 2026</span>
   </div>
   <div class="header-right">
-    <div class="date">📅 ณ วันที่ 22 มีนาคม 2569</div>
-    <div class="cd">⏳ เหลืออีก <b>9 วัน</b> <span>&nbsp;(23–31 มี.ค.)</span></div>
+    <div class="date">ð à¸ à¸§à¸±à¸à¸à¸µà¹ 22 à¸¡à¸µà¸à¸²à¸à¸¡ 2569</div>
+    <div class="cd">â³ à¹à¸«à¸¥à¸·à¸­à¸­à¸µà¸ <b>9 à¸§à¸±à¸</b> <span>&nbsp;(23â31 à¸¡à¸µ.à¸.)</span></div>
   </div>
 </div>
 
 <!-- TAB NAV -->
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="switchTab('tab1',this)">📊 ยอดขายสาขา</button>
-  <button class="tab-btn" onclick="switchTab('tab2',this)">📦 Stock Holding KPI</button>
+  <button class="tab-btn active" onclick="switchTab('tab1',this)">ð à¸¢à¸­à¸à¸à¸²à¸¢à¸ªà¸²à¸à¸²</button>
+  <button class="tab-btn" onclick="switchTab('tab2',this)">ð¦ Stock Holding KPI</button>
 </div>
 
 <div id="tab1" class="tab-pane active">
@@ -313,31 +313,31 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- MANAGER SUMMARY STRIP -->
   <div class="mgr-strip">
     <div class="mgr-item">
-      <div class="mgr-lbl">🎯 Target Group 4 (MAR'26)</div>
-      <div class="mgr-val white">฿16.80M</div>
-      <div class="mgr-sub muted">ก่อนหักVAT · 15 สาขา</div>
+      <div class="mgr-lbl">ð¯ Target Group 4 (MAR'26)</div>
+      <div class="mgr-val white">à¸¿16.80M</div>
+      <div class="mgr-sub muted">à¸à¹à¸­à¸à¸«à¸±à¸VAT Â· 15 à¸ªà¸²à¸à¸²</div>
       <div class="mgr-progress"><div class="mgr-progress-fill" style="width:100%;background:rgba(255,255,255,.2);"></div></div>
     </div>
     <div class="mgr-divider"></div>
     <div class="mgr-item">
-      <div class="mgr-lbl">📊 ทำได้ 1–22 มี.ค.</div>
-      <div class="mgr-val amber" id="ms-actual">–</div>
-      <div class="mgr-sub amber" id="ms-pct">–</div>
+      <div class="mgr-lbl">ð à¸à¸³à¹à¸à¹ 1â22 à¸¡à¸µ.à¸.</div>
+      <div class="mgr-val amber" id="ms-actual">â</div>
+      <div class="mgr-sub amber" id="ms-pct">â</div>
       <div class="mgr-progress"><div class="mgr-progress-fill" id="ms-bar" style="width:0%;background:linear-gradient(90deg,#fbbf24,#f59e0b);"></div></div>
     </div>
     <div class="mgr-divider"></div>
     <div class="mgr-item" style="text-align:center;">
-      <div class="mgr-lbl">🔮 EST สิ้นเดือน (Manager View)</div>
-      <div class="mgr-val green" id="ms-est">–</div>
-      <div id="ms-est-badge">–</div>
+      <div class="mgr-lbl">ð® EST à¸ªà¸´à¹à¸à¹à¸à¸·à¸­à¸ (Manager View)</div>
+      <div class="mgr-val green" id="ms-est">â</div>
+      <div id="ms-est-badge">â</div>
       <div class="mgr-progress"><div class="mgr-progress-fill" id="ms-est-bar" style="width:0%;"></div></div>
     </div>
     <div class="mgr-divider"></div>
     <div class="mgr-item">
-      <div class="mgr-lbl">📈 EST vs Target (Δ)</div>
-      <div class="mgr-val emerald" id="ms-delta">–</div>
-      <div class="mgr-sub" id="ms-delta-sub" style="color:#34d399;">–</div>
-      <div class="mgr-sub muted" style="margin-top:4px;" id="ms-branches">–</div>
+      <div class="mgr-lbl">ð EST vs Target (Î)</div>
+      <div class="mgr-val emerald" id="ms-delta">â</div>
+      <div class="mgr-sub" id="ms-delta-sub" style="color:#34d399;">â</div>
+      <div class="mgr-sub muted" style="margin-top:4px;" id="ms-branches">â</div>
     </div>
   </div>
 
@@ -345,94 +345,94 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- BILL SUMMARY TABLE -->
   <div class="bill-panel">
     <div class="bill-panel-title">
-      🧾 ยอดขาย &amp; จำนวนบิล &nbsp;&middot;&nbsp; 15 สาขา &nbsp;&middot;&nbsp; 1–22 มี.ค. 2569
-      <span style="margin-left:auto;font-size:10px;color:#4ade80;font-weight:700;">รวม 38,129 บิล &nbsp;&middot;&nbsp; ฿18.66M</span>
+      ð§¾ à¸¢à¸­à¸à¸à¸²à¸¢ &amp; à¸à¸³à¸à¸§à¸à¸à¸´à¸¥ &nbsp;&middot;&nbsp; 15 à¸ªà¸²à¸à¸² &nbsp;&middot;&nbsp; 1â22 à¸¡à¸µ.à¸. 2569
+      <span style="margin-left:auto;font-size:10px;color:#4ade80;font-weight:700;">à¸£à¸§à¸¡ 38,129 à¸à¸´à¸¥ &nbsp;&middot;&nbsp; à¸¿18.66M</span>
     </div>
     <table class="bill-tbl">
-      <thead><tr><th>#</th><th>สาขา</th><th>จำนวนบิล</th><th>ยอดขาย (บาท)</th><th>เฉลี่ย/บิล</th></tr></thead>
+      <thead><tr><th>#</th><th>à¸ªà¸²à¸à¸²</th><th>à¸à¸³à¸à¸§à¸à¸à¸´à¸¥</th><th>à¸¢à¸­à¸à¸à¸²à¸¢ (à¸à¸²à¸)</th><th>à¹à¸à¸¥à¸µà¹à¸¢/à¸à¸´à¸¥</th></tr></thead>
       <tbody>
-    <tr><td>1</td><td>Future Park (Flagship)</td><td class="bill-qty">3,383</td><td class="bill-sales">฿1,745,570</td><td class="bill-avg">฿516/บิล</td></tr>
-    <tr><td>2</td><td>Central ลาดพร้าว</td><td class="bill-qty">3,339</td><td class="bill-sales">฿1,700,574</td><td class="bill-avg">฿509/บิล</td></tr>
-    <tr><td>3</td><td>Future Park ชั้น 3</td><td class="bill-qty">3,316</td><td class="bill-sales">฿1,681,397</td><td class="bill-avg">฿507/บิล</td></tr>
-    <tr><td>4</td><td>Central หาดใหญ่</td><td class="bill-qty">4,424</td><td class="bill-sales">฿1,627,453</td><td class="bill-avg">฿368/บิล</td></tr>
-    <tr><td>5</td><td>Central เวสต์เกต</td><td class="bill-qty">2,957</td><td class="bill-sales">฿1,601,138</td><td class="bill-avg">฿541/บิล</td></tr>
-    <tr><td>6</td><td>Fashion Island</td><td class="bill-qty">2,922</td><td class="bill-sales">฿1,587,233</td><td class="bill-avg">฿543/บิล</td></tr>
-    <tr><td>7</td><td>The Mall งามวงศ์วาน</td><td class="bill-qty">2,707</td><td class="bill-sales">฿1,285,898</td><td class="bill-avg">฿475/บิล</td></tr>
-    <tr><td>8</td><td>The Mall บางกะปิ</td><td class="bill-qty">2,514</td><td class="bill-sales">฿1,210,566</td><td class="bill-avg">฿482/บิล</td></tr>
-    <tr><td>9</td><td>Central พระราม 2</td><td class="bill-qty">2,242</td><td class="bill-sales">฿1,114,167</td><td class="bill-avg">฿497/บิล</td></tr>
-    <tr><td>10</td><td>Central สุราษฎร์ธานี</td><td class="bill-qty">2,195</td><td class="bill-sales">฿1,094,201</td><td class="bill-avg">฿498/บิล</td></tr>
-    <tr><td>11</td><td>Central อยุธยา</td><td class="bill-qty">1,964</td><td class="bill-sales">฿988,934</td><td class="bill-avg">฿504/บิล</td></tr>
-    <tr><td>12</td><td>Central พิษณุโลก</td><td class="bill-qty">1,771</td><td class="bill-sales">฿960,969</td><td class="bill-avg">฿543/บิล</td></tr>
-    <tr><td>13</td><td>Central มหาชัย</td><td class="bill-qty">1,425</td><td class="bill-sales">฿715,546</td><td class="bill-avg">฿502/บิล</td></tr>
-    <tr><td>14</td><td>Central พระราม 9</td><td class="bill-qty">1,674</td><td class="bill-sales">฿689,310</td><td class="bill-avg">฿412/บิล</td></tr>
-    <tr><td>15</td><td>The Mall ท่าพระ</td><td class="bill-qty">1,296</td><td class="bill-sales">฿660,678</td><td class="bill-avg">฿510/บิล</td></tr>
+    <tr><td>1</td><td>Future Park (Flagship)</td><td class="bill-qty">3,383</td><td class="bill-sales">à¸¿1,745,570</td><td class="bill-avg">à¸¿516/à¸à¸´à¸¥</td></tr>
+    <tr><td>2</td><td>Central à¸¥à¸²à¸à¸à¸£à¹à¸²à¸§</td><td class="bill-qty">3,339</td><td class="bill-sales">à¸¿1,700,574</td><td class="bill-avg">à¸¿509/à¸à¸´à¸¥</td></tr>
+    <tr><td>3</td><td>Future Park à¸à¸±à¹à¸ 3</td><td class="bill-qty">3,316</td><td class="bill-sales">à¸¿1,681,397</td><td class="bill-avg">à¸¿507/à¸à¸´à¸¥</td></tr>
+    <tr><td>4</td><td>Central à¸«à¸²à¸à¹à¸«à¸à¹</td><td class="bill-qty">4,424</td><td class="bill-sales">à¸¿1,627,453</td><td class="bill-avg">à¸¿368/à¸à¸´à¸¥</td></tr>
+    <tr><td>5</td><td>Central à¹à¸§à¸ªà¸à¹à¹à¸à¸</td><td class="bill-qty">2,957</td><td class="bill-sales">à¸¿1,601,138</td><td class="bill-avg">à¸¿541/à¸à¸´à¸¥</td></tr>
+    <tr><td>6</td><td>Fashion Island</td><td class="bill-qty">2,922</td><td class="bill-sales">à¸¿1,587,233</td><td class="bill-avg">à¸¿543/à¸à¸´à¸¥</td></tr>
+    <tr><td>7</td><td>The Mall à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸</td><td class="bill-qty">2,707</td><td class="bill-sales">à¸¿1,285,898</td><td class="bill-avg">à¸¿475/à¸à¸´à¸¥</td></tr>
+    <tr><td>8</td><td>The Mall à¸à¸²à¸à¸à¸°à¸à¸´</td><td class="bill-qty">2,514</td><td class="bill-sales">à¸¿1,210,566</td><td class="bill-avg">à¸¿482/à¸à¸´à¸¥</td></tr>
+    <tr><td>9</td><td>Central à¸à¸£à¸°à¸£à¸²à¸¡ 2</td><td class="bill-qty">2,242</td><td class="bill-sales">à¸¿1,114,167</td><td class="bill-avg">à¸¿497/à¸à¸´à¸¥</td></tr>
+    <tr><td>10</td><td>Central à¸ªà¸¸à¸£à¸²à¸©à¸à¸£à¹à¸à¸²à¸à¸µ</td><td class="bill-qty">2,195</td><td class="bill-sales">à¸¿1,094,201</td><td class="bill-avg">à¸¿498/à¸à¸´à¸¥</td></tr>
+    <tr><td>11</td><td>Central à¸­à¸¢à¸¸à¸à¸¢à¸²</td><td class="bill-qty">1,964</td><td class="bill-sales">à¸¿988,934</td><td class="bill-avg">à¸¿504/à¸à¸´à¸¥</td></tr>
+    <tr><td>12</td><td>Central à¸à¸´à¸©à¸à¸¸à¹à¸¥à¸</td><td class="bill-qty">1,771</td><td class="bill-sales">à¸¿960,969</td><td class="bill-avg">à¸¿543/à¸à¸´à¸¥</td></tr>
+    <tr><td>13</td><td>Central à¸¡à¸«à¸²à¸à¸±à¸¢</td><td class="bill-qty">1,425</td><td class="bill-sales">à¸¿715,546</td><td class="bill-avg">à¸¿502/à¸à¸´à¸¥</td></tr>
+    <tr><td>14</td><td>Central à¸à¸£à¸°à¸£à¸²à¸¡ 9</td><td class="bill-qty">1,674</td><td class="bill-sales">à¸¿689,310</td><td class="bill-avg">à¸¿412/à¸à¸´à¸¥</td></tr>
+    <tr><td>15</td><td>The Mall à¸à¹à¸²à¸à¸£à¸°</td><td class="bill-qty">1,296</td><td class="bill-sales">à¸¿660,678</td><td class="bill-avg">à¸¿510/à¸à¸´à¸¥</td></tr>
       </tbody>
     </table>
   </div>
   <!-- KPI ROW -->
   <div class="kpi-row">
     <div class="kpi c-blue">
-      <div class="kpi-lbl">Target 100% รวม</div>
-      <div class="kpi-val c-blue">฿16.80M</div>
+      <div class="kpi-lbl">Target 100% à¸£à¸§à¸¡</div>
+      <div class="kpi-val c-blue">à¸¿16.80M</div>
       <div class="vat-tags">
-        <span class="vt b">ก่อนVAT ฿16,799,000</span>
-        <span class="vt a">หลังVAT ฿15,700,000</span>
+        <span class="vt b">à¸à¹à¸­à¸VAT à¸¿16,799,000</span>
+        <span class="vt a">à¸«à¸¥à¸±à¸VAT à¸¿15,700,000</span>
       </div>
-      <div class="kpi-ico">🎯</div>
+      <div class="kpi-ico">ð¯</div>
     </div>
     <div class="kpi c-green">
-      <div class="kpi-lbl">ยอดขาย 1–22 มี.ค.</div>
-      <div class="kpi-val c-green" id="k-actual">฿8.71M</div>
+      <div class="kpi-lbl">à¸¢à¸­à¸à¸à¸²à¸¢ 1â22 à¸¡à¸µ.à¸.</div>
+      <div class="kpi-val c-green" id="k-actual">à¸¿8.71M</div>
       <div class="vat-tags">
-        <span class="vt b" id="k-ab">–</span>
-        <span class="vt a" id="k-aa">–</span>
+        <span class="vt b" id="k-ab">â</span>
+        <span class="vt a" id="k-aa">â</span>
       </div>
-      <div class="kpi-ico">📈</div>
+      <div class="kpi-ico">ð</div>
     </div>
     <div class="kpi c-amber">
-      <div class="kpi-lbl">ประมาณการณ์สิ้นเดือน (EST)</div>
-      <div class="kpi-val c-amber" id="k-est">–</div>
+      <div class="kpi-lbl">à¸à¸£à¸°à¸¡à¸²à¸à¸à¸²à¸£à¸à¹à¸ªà¸´à¹à¸à¹à¸à¸·à¸­à¸ (EST)</div>
+      <div class="kpi-val c-amber" id="k-est">â</div>
       <div class="vat-tags">
-        <span class="vt b" id="k-estb">–</span>
-        <span class="vt a" id="k-esta">–</span>
+        <span class="vt b" id="k-estb">â</span>
+        <span class="vt a" id="k-esta">â</span>
       </div>
-      <div class="kpi-ico">🔮</div>
+      <div class="kpi-ico">ð®</div>
     </div>
     <div class="kpi c-red">
-      <div class="kpi-lbl">ต้องทำต่อวัน (13 วันที่เหลือ)</div>
-      <div class="kpi-val c-red" id="k-pd">–</div>
+      <div class="kpi-lbl">à¸à¹à¸­à¸à¸à¸³à¸à¹à¸­à¸§à¸±à¸ (13 à¸§à¸±à¸à¸à¸µà¹à¹à¸«à¸¥à¸·à¸­)</div>
+      <div class="kpi-val c-red" id="k-pd">â</div>
       <div class="vat-tags">
-        <span class="vt b" id="k-gapb">–</span>
-        <span class="vt a" id="k-gapa">–</span>
+        <span class="vt b" id="k-gapb">â</span>
+        <span class="vt a" id="k-gapa">â</span>
       </div>
-      <div class="kpi-ico">🔥</div>
+      <div class="kpi-ico">ð¥</div>
     </div>
   </div>
 
   <!-- STATUS ROW -->
   <div class="status-row">
     <div class="sc on">
-      <div class="sc-ico">✅</div>
+      <div class="sc-ico">â</div>
       <div>
-        <div class="sc-count" id="c-on">–</div>
+        <div class="sc-count" id="c-on">â</div>
         <div class="sc-lbl">On Track</div>
-        <div class="sc-desc">EST ≥ 100% ของ Target</div>
+        <div class="sc-desc">EST â¥ 100% à¸à¸­à¸ Target</div>
       </div>
     </div>
     <div class="sc risk">
-      <div class="sc-ico">⚠️</div>
+      <div class="sc-ico">â ï¸</div>
       <div>
-        <div class="sc-count" id="c-risk">–</div>
+        <div class="sc-count" id="c-risk">â</div>
         <div class="sc-lbl">At Risk</div>
-        <div class="sc-desc">EST 85–99% ของ Target</div>
+        <div class="sc-desc">EST 85â99% à¸à¸­à¸ Target</div>
       </div>
     </div>
     <div class="sc off">
-      <div class="sc-ico">🔴</div>
+      <div class="sc-ico">ð´</div>
       <div>
-        <div class="sc-count" id="c-off">–</div>
+        <div class="sc-count" id="c-off">â</div>
         <div class="sc-lbl">Off Track</div>
-        <div class="sc-desc">EST ต่ำกว่า 85% ของ Target</div>
+        <div class="sc-desc">EST à¸à¹à¸³à¸à¸§à¹à¸² 85% à¸à¸­à¸ Target</div>
       </div>
     </div>
   </div>
@@ -440,52 +440,52 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- ROW: DONUT + BAR + MONTHLY -->
   <div class="row-3">
     <div class="card">
-      <div class="card-title blue">ภาพรวม Achievement</div>
+      <div class="card-title blue">à¸ à¸²à¸à¸£à¸§à¸¡ Achievement</div>
       <div class="vat-summary">
         <div class="vbox b">
-          <div class="vbox-lbl">🔵 ก่อนหักVAT</div>
-          <div class="vbox-val" id="vb-ab">–</div>
-          <div class="vbox-pct" id="vb-pb">–</div>
+          <div class="vbox-lbl">ðµ à¸à¹à¸­à¸à¸«à¸±à¸VAT</div>
+          <div class="vbox-val" id="vb-ab">â</div>
+          <div class="vbox-pct" id="vb-pb">â</div>
         </div>
         <div class="vbox a">
-          <div class="vbox-lbl">🟢 หลังหักVAT</div>
-          <div class="vbox-val" id="vb-aa">–</div>
-          <div class="vbox-pct" id="vb-pa">–</div>
+          <div class="vbox-lbl">ð¢ à¸«à¸¥à¸±à¸à¸«à¸±à¸VAT</div>
+          <div class="vbox-val" id="vb-aa">â</div>
+          <div class="vbox-pct" id="vb-pa">â</div>
         </div>
       </div>
       <div class="donut-wrap">
         <canvas id="donutChart"></canvas>
         <div class="donut-center">
-          <div class="big" id="d-pct">–</div>
-          <div class="sm">ทำได้</div>
+          <div class="big" id="d-pct">â</div>
+          <div class="sm">à¸à¸³à¹à¸à¹</div>
         </div>
       </div>
       <div class="legend">
         <div class="leg-item">
           <div class="leg-dot" style="background:#1e40af;"></div>
-          <span class="leg-name">ยอดขาย 1–18</span>
-          <span class="leg-val" id="l-a">–</span>
+          <span class="leg-name">à¸¢à¸­à¸à¸à¸²à¸¢ 1â18</span>
+          <span class="leg-val" id="l-a">â</span>
         </div>
         <div class="leg-item">
           <div class="leg-dot" style="background:#e2e8f0;"></div>
-          <span class="leg-name">ยังขาด</span>
-          <span class="leg-val" style="color:#dc2626;" id="l-g">–</span>
+          <span class="leg-name">à¸¢à¸±à¸à¸à¸²à¸</span>
+          <span class="leg-val" style="color:#dc2626;" id="l-g">â</span>
         </div>
         <div class="leg-item" style="border-top:1px solid #f1f5f9;padding-top:7px;margin-top:1px;">
           <div class="leg-dot" style="background:#d97706;"></div>
-          <span class="leg-name">EST สิ้นเดือน</span>
-          <span class="leg-val" style="color:#92400e;" id="l-e">–</span>
+          <span class="leg-name">EST à¸ªà¸´à¹à¸à¹à¸à¸·à¸­à¸</span>
+          <span class="leg-val" style="color:#92400e;" id="l-e">â</span>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title blue">Target vs ยอดขาย vs EST (รายสาขา)</div>
+      <div class="card-title blue">Target vs à¸¢à¸­à¸à¸à¸²à¸¢ vs EST (à¸£à¸²à¸¢à¸ªà¸²à¸à¸²)</div>
       <canvas id="barChart" height="235"></canvas>
     </div>
 
     <div class="card">
-      <div class="card-title teal">เปรียบเทียบรายเดือน: FEB vs MAR</div>
+      <div class="card-title teal">à¹à¸à¸£à¸µà¸¢à¸à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢à¹à¸à¸·à¸­à¸: FEB vs MAR</div>
       <canvas id="monthlyChart" height="235"></canvas>
     </div>
   </div>
@@ -493,13 +493,13 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- ROW: PROGRESS + WEEKLY -->
   <div class="row-2a">
     <div class="card">
-      <div class="card-title blue">Achievement รายสาขา · VAT Breakdown · Status</div>
+      <div class="card-title blue">Achievement à¸£à¸²à¸¢à¸ªà¸²à¸à¸² Â· VAT Breakdown Â· Status</div>
       <div class="prog-list" id="progList"></div>
     </div>
     <div class="card" style="display:flex;flex-direction:column;">
       <div class="card-title" style="color:#334155;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
         <span style="display:inline-block;width:3px;height:13px;border-radius:2px;background:linear-gradient(180deg,#0f766e,#2dd4bf);flex-shrink:0;"></span>
-        YoY Growth · ปี 2569 vs 2568 (1-22 มี.ค., ก่อนหักVAT)
+        YoY Growth Â· à¸à¸µ 2569 vs 2568 (1-22 à¸¡à¸µ.à¸., à¸à¹à¸­à¸à¸«à¸±à¸VAT)
       </div>
       <div id="yoySummary" style="display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:12px;flex-shrink:0;"></div>
       <div style="flex:1;position:relative;min-height:0;">
@@ -510,23 +510,23 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 
   <!-- FULL TABLE -->
   <div class="card" style="margin-bottom:0;">
-    <div class="card-title green">ตารางข้อมูลรายสาขา — ครบทุก Dimension</div>
+    <div class="card-title green">à¸à¸²à¸£à¸²à¸à¸à¹à¸­à¸¡à¸¹à¸¥à¸£à¸²à¸¢à¸ªà¸²à¸à¸² â à¸à¸£à¸à¸à¸¸à¸ Dimension</div>
     <div class="scrollable" style="max-height:285px;">
       <table class="tbl">
         <thead>
           <tr>
-            <th class="l">สาขา</th>
-            <th class="hb">Target หลังVAT</th>
-            <th>% ทำได้</th>
-            <th class="hb">ยอดขาย ก่อนVAT</th>
-            <th class="ha">ยอดขาย หลังVAT</th>
-            <th class="hb">EST สิ้นเดือน</th>
-            <th class="ht">FEB (หลังVAT)</th>
+            <th class="l">à¸ªà¸²à¸à¸²</th>
+            <th class="hb">Target à¸«à¸¥à¸±à¸VAT</th>
+            <th>% à¸à¸³à¹à¸à¹</th>
+            <th class="hb">à¸¢à¸­à¸à¸à¸²à¸¢ à¸à¹à¸­à¸VAT</th>
+            <th class="ha">à¸¢à¸­à¸à¸à¸²à¸¢ à¸«à¸¥à¸±à¸VAT</th>
+            <th class="hb">EST à¸ªà¸´à¹à¸à¹à¸à¸·à¸­à¸</th>
+            <th class="ht">FEB (à¸«à¸¥à¸±à¸VAT)</th>
             <th class="ht">MAR vs FEB</th>
-            <th class="ht">%เปลี่ยน</th>
-            <th class="hp">W:23ก.พ.–1มี.</th>
-            <th class="hp">W:2–8 มี.</th>
-            <th class="hp">W:9–15 มี.</th>
+            <th class="ht">%à¹à¸à¸¥à¸µà¹à¸¢à¸</th>
+            <th class="hp">W:23à¸.à¸.â1à¸¡à¸µ.</th>
+            <th class="hp">W:2â8 à¸¡à¸µ.</th>
+            <th class="hp">W:9â15 à¸¡à¸µ.</th>
             <th>YoY</th>
             <th>Status</th>
           </tr>
@@ -546,50 +546,50 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- STOCK KPI CARDS -->
   <div class="kpi-row" style="grid-template-columns:repeat(3,1fr);">
     <div class="kpi2 c-slate">
-      <div class="kpi2-lbl">มูลค่า Stock รวม (MAR'26)</div>
-      <div class="kpi2-val c-slate">฿21.51M</div>
-      <div class="kpi2-sub">99,202 ชิ้น · AVE SALE รวม ฿15.49M/เดือน</div>
-      <div class="kpi2-ico">📦</div>
+      <div class="kpi2-lbl">à¸¡à¸¹à¸¥à¸à¹à¸² Stock à¸£à¸§à¸¡ (MAR'26)</div>
+      <div class="kpi2-val c-slate">à¸¿21.51M</div>
+      <div class="kpi2-sub">99,202 à¸à¸´à¹à¸ Â· AVE SALE à¸£à¸§à¸¡ à¸¿15.49M/à¹à¸à¸·à¸­à¸</div>
+      <div class="kpi2-ico">ð¦</div>
     </div>
     <div class="kpi2 c-rose">
-      <div class="kpi2-lbl">Stock Holding รวม (MAR'26)</div>
+      <div class="kpi2-lbl">Stock Holding à¸£à¸§à¸¡ (MAR'26)</div>
       <div class="kpi2-val c-rose" id="sk-total">1.46x</div>
-      <div class="kpi2-sub">KPI Target ≤ 1.0x &nbsp;·&nbsp; FEB'26: 1.52x &nbsp;·&nbsp; Δ -0.06</div>
+      <div class="kpi2-sub">KPI Target â¤ 1.0x &nbsp;Â·&nbsp; FEB'26: 1.52x &nbsp;Â·&nbsp; Î -0.06</div>
       <div class="kpi-gauge"><div class="kpi-gauge-fill" style="width:100%;background:linear-gradient(90deg,#16a34a 0%,#16a34a 68%,#d97706 68%,#d97706 100%,#dc2626 100%);"></div></div>
       <div class="kpi-line"><span>0</span><span style="color:#16a34a;font-weight:700;">KPI=1.0</span><span>2.0+</span></div>
-      <div class="kpi2-ico">📉</div>
+      <div class="kpi2-ico">ð</div>
     </div>
     <div class="kpi2 c-sky">
-      <div class="kpi2-lbl">สาขาที่ผ่าน KPI (≤1.0)</div>
-      <div class="kpi2-val c-sky" id="sk-pass-cnt">–</div>
-      <div class="kpi2-sub" id="sk-pass-sub">–</div>
-      <div class="kpi2-ico">✅</div>
+      <div class="kpi2-lbl">à¸ªà¸²à¸à¸²à¸à¸µà¹à¸à¹à¸²à¸ KPI (â¤1.0)</div>
+      <div class="kpi2-val c-sky" id="sk-pass-cnt">â</div>
+      <div class="kpi2-sub" id="sk-pass-sub">â</div>
+      <div class="kpi2-ico">â</div>
     </div>
   </div>
 
   <!-- STOCK STATUS CARDS -->
   <div class="status-row">
     <div class="sc2 pass">
-      <div class="sc-ico">✅</div>
+      <div class="sc-ico">â</div>
       <div>
-        <div class="sc2-count" id="sk-c-pass">–</div>
-        <div class="sc2-lbl">ผ่าน KPI</div>
-        <div class="sc2-desc">Stock Holding ≤ 1.0x</div>
+        <div class="sc2-count" id="sk-c-pass">â</div>
+        <div class="sc2-lbl">à¸à¹à¸²à¸ KPI</div>
+        <div class="sc2-desc">Stock Holding â¤ 1.0x</div>
       </div>
     </div>
     <div class="sc2 watch">
-      <div class="sc-ico">⚠️</div>
+      <div class="sc-ico">â ï¸</div>
       <div>
-        <div class="sc2-count" id="sk-c-watch">–</div>
-        <div class="sc2-lbl">ต้องระวัง</div>
-        <div class="sc2-desc">Stock Holding 1.0–1.5x</div>
+        <div class="sc2-count" id="sk-c-watch">â</div>
+        <div class="sc2-lbl">à¸à¹à¸­à¸à¸£à¸°à¸§à¸±à¸</div>
+        <div class="sc2-desc">Stock Holding 1.0â1.5x</div>
       </div>
     </div>
     <div class="sc2 fail">
-      <div class="sc-ico">🔴</div>
+      <div class="sc-ico">ð´</div>
       <div>
-        <div class="sc2-count" id="sk-c-fail">–</div>
-        <div class="sc2-lbl">เกิน KPI</div>
+        <div class="sc2-count" id="sk-c-fail">â</div>
+        <div class="sc2-lbl">à¹à¸à¸´à¸ KPI</div>
         <div class="sc2-desc">Stock Holding > 1.5x</div>
       </div>
     </div>
@@ -598,13 +598,13 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
   <!-- CHART ROW -->
   <div class="row-stk">
     <div class="card" style="display:flex;flex-direction:column;">
-      <div class="card-title teal">Stock Holding MAR'26 รายสาขา (KPI ≤ 1.0x)</div>
+      <div class="card-title teal">Stock Holding MAR'26 à¸£à¸²à¸¢à¸ªà¸²à¸à¸² (KPI â¤ 1.0x)</div>
       <div style="flex:1;position:relative;min-height:380px;">
         <canvas id="stkBarChart" style="position:absolute;inset:0;width:100%!important;height:100%!important;"></canvas>
       </div>
     </div>
     <div class="card" style="display:flex;flex-direction:column;">
-      <div class="card-title blue">FEB vs MAR Holding · เปลี่ยนแปลง MoM</div>
+      <div class="card-title blue">FEB vs MAR Holding Â· à¹à¸à¸¥à¸µà¹à¸¢à¸à¹à¸à¸¥à¸ MoM</div>
       <div style="flex:1;position:relative;min-height:380px;">
         <canvas id="stkDiftChart" style="position:absolute;inset:0;width:100%!important;height:100%!important;"></canvas>
       </div>
@@ -613,18 +613,18 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 
   <!-- STOCK TABLE -->
   <div class="card" style="margin-bottom:0;">
-    <div class="card-title green">ตารางข้อมูล Stock Holding รายสาขา</div>
+    <div class="card-title green">à¸à¸²à¸£à¸²à¸à¸à¹à¸­à¸¡à¸¹à¸¥ Stock Holding à¸£à¸²à¸¢à¸ªà¸²à¸à¸²</div>
     <div class="scrollable" style="max-height:300px;">
       <table class="tbl">
         <thead>
           <tr>
-            <th class="l">สาขา</th>
+            <th class="l">à¸ªà¸²à¸à¸²</th>
             <th>STK QTY</th>
-            <th>มูลค่า Stock</th>
-            <th>AVE SALE/เดือน</th>
+            <th>à¸¡à¸¹à¸¥à¸à¹à¸² Stock</th>
+            <th>AVE SALE/à¹à¸à¸·à¸­à¸</th>
             <th class="ht">FEB'26 Holding</th>
             <th class="ht">MAR'26 Holding</th>
-            <th>Δ MoM</th>
+            <th>Î MoM</th>
             <th>KPI Status</th>
           </tr>
         </thead>
@@ -635,35 +635,35 @@ body{font-family:'Sarabun',sans-serif;background:#eef2f7;color:#0f172a;}
 
 </div>
 <div class="footer">
-  Yuedpao · Group 4 · Stock Holding KPI · ข้อมูล Update 19 มีนาคม 2569 &nbsp;·&nbsp;
-  Stock Holding = มูลค่า Stock ÷ AVE SALE/เดือน &nbsp;·&nbsp; KPI Target ≤ 1.0x
+  Yuedpao Â· Group 4 Â· Stock Holding KPI Â· à¸à¹à¸­à¸¡à¸¹à¸¥ Update 22 à¸¡à¸µà¸à¸²à¸à¸¡ 2569 &nbsp;Â·&nbsp;
+  Stock Holding = à¸¡à¸¹à¸¥à¸à¹à¸² Stock Ã· AVE SALE/à¹à¸à¸·à¸­à¸ &nbsp;Â·&nbsp; KPI Target â¤ 1.0x
 </div>
 </div><!-- end tab2 -->
 
 <div class="footer" id="footer1">
-  Yuedpao · Group 4 · Dashboard March 2026 · ข้อมูล ณ 19 มีนาคม 2569 &nbsp;·&nbsp;
-  EST = (ยอดขายก่อนVAT 1–22 ÷ 22) × 31 ✅ ตรวจสอบแล้ว &nbsp;·&nbsp;
-  VAT 7% · W = สัปดาห์ (หลังVAT) · FEB = ยอดขายเต็มเดือนกุมภาพันธ์
+  Yuedpao Â· Group 4 Â· Dashboard March 2026 Â· à¸à¹à¸­à¸¡à¸¹à¸¥ à¸ 19 à¸¡à¸µà¸à¸²à¸à¸¡ 2569 &nbsp;Â·&nbsp;
+  EST = (à¸¢à¸­à¸à¸à¸²à¸¢à¸à¹à¸­à¸VAT 1â22 Ã· 22) Ã 31 â à¸à¸£à¸§à¸à¸ªà¸­à¸à¹à¸¥à¹à¸§ &nbsp;Â·&nbsp;
+  VAT 7% Â· W = à¸ªà¸±à¸à¸à¸²à¸«à¹ (à¸«à¸¥à¸±à¸VAT) Â· FEB = à¸¢à¸­à¸à¸à¸²à¸¢à¹à¸à¹à¸¡à¹à¸à¸·à¸­à¸à¸à¸¸à¸¡à¸ à¸²à¸à¸±à¸à¸à¹
 </div>
 
 <script>
 const REM=9, VAT=1.07;
 const D=[
-    {name:"Central ลาดพร้าว",         sh:"ลาดพร้าว",          tB:2247000,tA:2100000,aB:1700574, aA:1589321,est:2396263,feb:1504550,dift:84771, w1:557450,w2:585443,w3:313311,y24:1084785, y25:1536875},
+    {name:"Central à¸¥à¸²à¸à¸à¸£à¹à¸²à¸§",         sh:"à¸¥à¸²à¸à¸à¸£à¹à¸²à¸§",          tB:2247000,tA:2100000,aB:1700574, aA:1589321,est:2396263,feb:1504550,dift:84771, w1:557450,w2:585443,w3:313311,y24:1084785, y25:1536875},
     {name:"Future Park (Flagship)",   sh:"Future Park",       tB:2247000,tA:2100000,aB:1745570, aA:1631374,est:2459667,feb:1586233,dift:45141, w1:558634,w2:576645,w3:317306,y24:905252, y25:1406152},
-    {name:"Central ชลบุรี",           sh:"ชลบุรี",            tB:1123500,tA:1050000,aB:758629, aA:708999,est:1237763,feb:561741,dift:147258, w1:285709,w2:300099,w3:172821,y24:459697, y25:545669},
-    {name:"Central นครสวรรค์",        sh:"นครสวรรค์",         tB:1177000,tA:1100000,aB:771109, aA:720663,est:1258125,feb:519090,dift:201573, w1:262794,w2:348473,w3:159842,y24:465378, y25:527493},
-    {name:"Central เชียงราย",         sh:"เชียงราย",          tB:1177000,tA:1100000,aB:675616, aA:631417,est:1102320,feb:631888,dift:-471, w1:277848,w2:224165,w3:173603,y24:441430, y25:551164},
-    {name:"Passione ระยอง",           sh:"ระยอง",             tB:802500,tA:750000,aB:442666, aA:413707,est:722244,feb:408968,dift:4739, w1:183446,w2:177585,w3:81635,y24:329136, y25:391850},
-    {name:"Robinson ลาดกระบัง",       sh:"ลาดกระบัง",         tB:1177000,tA:1100000,aB:703951, aA:657898,est:1148551,feb:588661,dift:69237, w1:294934,w2:292808,w3:116209,y24:418772, y25:491889},
-    {name:"Central ลำปาง",            sh:"ลำปาง",             tB:1016500,tA:950000,aB:542071, aA:506608,est:884431,feb:457096,dift:49512, w1:221746,w2:206739,w3:113586,y24:428077, y25:505981},
-    {name:"Robinson มุกดาหาร",        sh:"มุกดาหาร",          tB:749000,tA:700000,aB:327258, aA:305849,est:533947,feb:333910,dift:-28061, w1:140363,w2:133025,w3:53870,y24:287936, y25:339237},
-    {name:"BTS หมอชิต",               sh:"BTS หมอชิต",        tB:267500,tA:250000,aB:109130, aA:101991,est:178054,feb:97370,dift:4621, w1:47533,w2:45879,w3:15718,y24:84507, y25:104366},
-    {name:"BTS สยาม",                 sh:"BTS สยาม",          tB:321000,tA:300000,aB:164696, aA:153921,est:268714,feb:113132,dift:40789, w1:60234,w2:58701,w3:45761,y24:128292, y25:151131},
-    {name:"Robinson สมุทรปราการ",     sh:"สมุทรปราการ",       tB:963000,tA:900000,aB:496209, aA:463747,est:809604,feb:430280,dift:33467, w1:231310,w2:182495,w3:82404,y24:0, y25:0},
-    {name:"Central พิษณุโลก",         sh:"พิษณุโลก",          tB:856000,tA:800000,aB:960969, aA:898102,est:1354093,feb:1012334,dift:-114232, w1:381073,w2:393601,w3:102121,y24:699474, y25:1015143},
-    {name:"The Mall งามวงศ์วาน",      sh:"งามวงศ์วาน",        tB:1712000,tA:1600000,aB:1285898, aA:1201774,est:1811947,feb:755459,dift:446315, w1:305384,w2:407154,w3:381319,y24:778588, y25:1102557},
-    {name:"Big C ราชดำริ",            sh:"ราชดำริ",           tB:963000,tA:900000,aB:505346, aA:472286,est:824511,feb:415887,dift:56399, w1:227725,w2:174044,w3:103577,y24:0, y25:0},
+    {name:"Central à¸à¸¥à¸à¸¸à¸£à¸µ",           sh:"à¸à¸¥à¸à¸¸à¸£à¸µ",            tB:1123500,tA:1050000,aB:758629, aA:708999,est:1237763,feb:561741,dift:147258, w1:285709,w2:300099,w3:172821,y24:459697, y25:545669},
+    {name:"Central à¸à¸à¸£à¸ªà¸§à¸£à¸£à¸à¹",        sh:"à¸à¸à¸£à¸ªà¸§à¸£à¸£à¸à¹",         tB:1177000,tA:1100000,aB:771109, aA:720663,est:1258125,feb:519090,dift:201573, w1:262794,w2:348473,w3:159842,y24:465378, y25:527493},
+    {name:"Central à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢",         sh:"à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢",          tB:1177000,tA:1100000,aB:675616, aA:631417,est:1102320,feb:631888,dift:-471, w1:277848,w2:224165,w3:173603,y24:441430, y25:551164},
+    {name:"Passione à¸£à¸°à¸¢à¸­à¸",           sh:"à¸£à¸°à¸¢à¸­à¸",             tB:802500,tA:750000,aB:442666, aA:413707,est:722244,feb:408968,dift:4739, w1:183446,w2:177585,w3:81635,y24:329136, y25:391850},
+    {name:"Robinson à¸¥à¸²à¸à¸à¸£à¸°à¸à¸±à¸",       sh:"à¸¥à¸²à¸à¸à¸£à¸°à¸à¸±à¸",         tB:1177000,tA:1100000,aB:703951, aA:657898,est:1148551,feb:588661,dift:69237, w1:294934,w2:292808,w3:116209,y24:418772, y25:491889},
+    {name:"Central à¸¥à¸³à¸à¸²à¸",            sh:"à¸¥à¸³à¸à¸²à¸",             tB:1016500,tA:950000,aB:542071, aA:506608,est:884431,feb:457096,dift:49512, w1:221746,w2:206739,w3:113586,y24:428077, y25:505981},
+    {name:"Robinson à¸¡à¸¸à¸à¸à¸²à¸«à¸²à¸£",        sh:"à¸¡à¸¸à¸à¸à¸²à¸«à¸²à¸£",          tB:749000,tA:700000,aB:327258, aA:305849,est:533947,feb:333910,dift:-28061, w1:140363,w2:133025,w3:53870,y24:287936, y25:339237},
+    {name:"BTS à¸«à¸¡à¸­à¸à¸´à¸",               sh:"BTS à¸«à¸¡à¸­à¸à¸´à¸",        tB:267500,tA:250000,aB:109130, aA:101991,est:178054,feb:97370,dift:4621, w1:47533,w2:45879,w3:15718,y24:84507, y25:104366},
+    {name:"BTS à¸ªà¸¢à¸²à¸¡",                 sh:"BTS à¸ªà¸¢à¸²à¸¡",          tB:321000,tA:300000,aB:164696, aA:153921,est:268714,feb:113132,dift:40789, w1:60234,w2:58701,w3:45761,y24:128292, y25:151131},
+    {name:"Robinson à¸ªà¸¡à¸¸à¸à¸£à¸à¸£à¸²à¸à¸²à¸£",     sh:"à¸ªà¸¡à¸¸à¸à¸£à¸à¸£à¸²à¸à¸²à¸£",       tB:963000,tA:900000,aB:496209, aA:463747,est:809604,feb:430280,dift:33467, w1:231310,w2:182495,w3:82404,y24:0, y25:0},
+    {name:"Central à¸à¸´à¸©à¸à¸¸à¹à¸¥à¸",         sh:"à¸à¸´à¸©à¸à¸¸à¹à¸¥à¸",          tB:856000,tA:800000,aB:960969, aA:898102,est:1354093,feb:1012334,dift:-114232, w1:381073,w2:393601,w3:102121,y24:699474, y25:1015143},
+    {name:"The Mall à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸",      sh:"à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸",        tB:1712000,tA:1600000,aB:1285898, aA:1201774,est:1811947,feb:755459,dift:446315, w1:305384,w2:407154,w3:381319,y24:778588, y25:1102557},
+    {name:"Big C à¸£à¸²à¸à¸à¸³à¸£à¸´",            sh:"à¸£à¸²à¸à¸à¸³à¸£à¸´",           tB:963000,tA:900000,aB:505346, aA:472286,est:824511,feb:415887,dift:56399, w1:227725,w2:174044,w3:103577,y24:0, y25:0},
 ];
 D.forEach(b=>{
   b.pct=b.aB/b.tB; b.pctA=b.aA/b.tA;
@@ -682,10 +682,10 @@ const sGap=sTB-sAB, sGapA=sTA-sAA;
 const sFeb=D.reduce((s,b)=>s+b.feb,0), sDift=sAA-sFeb;
 
 function fmt(n){return Math.round(n).toLocaleString('th-TH');}
-function fmtM(n){return'฿'+(n/1e6).toFixed(2)+'M';}
-function fmtK(n){return'฿'+(n/1e3).toFixed(0)+'K';}
+function fmtM(n){return'à¸¿'+(n/1e6).toFixed(2)+'M';}
+function fmtK(n){return'à¸¿'+(n/1e3).toFixed(0)+'K';}
 
-// Color by achievement % — refined palette
+// Color by achievement % â refined palette
 function pCol(p){
   return p>=.9?'#16a34a':p>=.75?'#1d4ed8':p>=.5?'#d97706':'#dc2626';
 }
@@ -698,29 +698,29 @@ function pGrad(p){
 function pillC(p){return p>=.9?'p-g':p>=.75?'p-b':p>=.5?'p-y':'p-r';}
 function stTag(s){
   return s==='on'
-    ?'<span class="tag tag-on">✅ On Track</span>'
+    ?'<span class="tag tag-on">â On Track</span>'
     :s==='risk'
-    ?'<span class="tag tag-risk">⚠️ At Risk</span>'
-    :'<span class="tag tag-off">🔴 Off Track</span>';
+    ?'<span class="tag tag-risk">â ï¸ At Risk</span>'
+    :'<span class="tag tag-off">ð´ Off Track</span>';
 }
 
-// ── KPIs ──
+// ââ KPIs ââ
 document.getElementById('k-actual').textContent=fmtM(sAB);
-document.getElementById('k-ab').textContent='ก่อนVAT '+fmtM(sAB);
-document.getElementById('k-aa').textContent='หลังVAT '+fmtM(sAA);
+document.getElementById('k-ab').textContent='à¸à¹à¸­à¸VAT '+fmtM(sAB);
+document.getElementById('k-aa').textContent='à¸«à¸¥à¸±à¸VAT '+fmtM(sAA);
 document.getElementById('k-est').textContent=fmtM(sEst);
-document.getElementById('k-estb').textContent='ก่อนVAT '+fmtM(sEst);
-document.getElementById('k-esta').textContent='หลังVAT '+fmtM(sEstA);
+document.getElementById('k-estb').textContent='à¸à¹à¸­à¸VAT '+fmtM(sEst);
+document.getElementById('k-esta').textContent='à¸«à¸¥à¸±à¸VAT '+fmtM(sEstA);
 document.getElementById('k-pd').textContent=fmtK(sGap/REM);
-document.getElementById('k-gapb').textContent='ขาด ก่อนVAT '+fmtM(sGap);
-document.getElementById('k-gapa').textContent='ขาด หลังVAT '+fmtM(sGapA);
+document.getElementById('k-gapb').textContent='à¸à¸²à¸ à¸à¹à¸­à¸VAT '+fmtM(sGap);
+document.getElementById('k-gapa').textContent='à¸à¸²à¸ à¸«à¸¥à¸±à¸VAT '+fmtM(sGapA);
 
-// ── Status counts ──
-document.getElementById('c-on').textContent=D.filter(b=>b.st==='on').length+' สาขา';
-document.getElementById('c-risk').textContent=D.filter(b=>b.st==='risk').length+' สาขา';
-document.getElementById('c-off').textContent=D.filter(b=>b.st==='off').length+' สาขา';
+// ââ Status counts ââ
+document.getElementById('c-on').textContent=D.filter(b=>b.st==='on').length+' à¸ªà¸²à¸à¸²';
+document.getElementById('c-risk').textContent=D.filter(b=>b.st==='risk').length+' à¸ªà¸²à¸à¸²';
+document.getElementById('c-off').textContent=D.filter(b=>b.st==='off').length+' à¸ªà¸²à¸à¸²';
 
-// ── Manager Strip ──
+// ââ Manager Strip ââ
 const pctB=sAB/sTB;
 const estPctG=sEst/sTB;
 const msDelta=sEst-sTB;
@@ -728,35 +728,35 @@ const onCnt=D.filter(b=>b.st==='on').length;
 const riskCnt=D.filter(b=>b.st==='risk').length;
 const offCnt=D.filter(b=>b.st==='off').length;
 document.getElementById('ms-actual').textContent=fmtM(sAB);
-document.getElementById('ms-pct').textContent=(pctB*100).toFixed(1)+'% ของ Target ก่อนVAT';
+document.getElementById('ms-pct').textContent=(pctB*100).toFixed(1)+'% à¸à¸­à¸ Target à¸à¹à¸­à¸VAT';
 document.getElementById('ms-bar').style.width=Math.min(pctB*100,100)+'%';
 document.getElementById('ms-est').textContent=fmtM(sEst);
 (function(){
   const eb=document.getElementById('ms-est-badge');
   const epct=(estPctG*100).toFixed(1);
   const cls=estPctG>=1?'tag tag-on':estPctG>=0.85?'tag tag-risk':'tag tag-off';
-  const ico=estPctG>=1?'✅':estPctG>=0.85?'⚠️':'🔴';
-  eb.innerHTML='<span class="'+cls+'">'+ico+' EST '+epct+'% ของ Target</span>';
+  const ico=estPctG>=1?'â':estPctG>=0.85?'â ï¸':'ð´';
+  eb.innerHTML='<span class="'+cls+'">'+ico+' EST '+epct+'% à¸à¸­à¸ Target</span>';
 })();
 document.getElementById('ms-est-bar').style.width=Math.min(estPctG*100,100)+'%';
 document.getElementById('ms-est-bar').style.background=estPctG>=1?'linear-gradient(90deg,#16a34a,#4ade80)':estPctG>=0.85?'linear-gradient(90deg,#d97706,#fbbf24)':'linear-gradient(90deg,#dc2626,#f87171)';
 document.getElementById('ms-delta').textContent=(msDelta>=0?'+':'')+fmtM(msDelta);
 document.getElementById('ms-delta-sub').textContent=(msDelta>=0?'+':'')+(msDelta/sTB*100).toFixed(1)+'% vs Target 100%';
-document.getElementById('ms-branches').textContent='✅ On '+onCnt+' · ⚠️ Risk '+riskCnt+' · 🔴 Off '+offCnt;
+document.getElementById('ms-branches').textContent='â On '+onCnt+' Â· â ï¸ Risk '+riskCnt+' Â· ð´ Off '+offCnt;
 
-// ── Donut label & legend ──
+// ââ Donut label & legend ââ
 document.getElementById('d-pct').textContent=(pctB*100).toFixed(1)+'%';
 document.getElementById('l-a').textContent=fmtM(sAB);
-document.getElementById('l-g').textContent='฿'+fmt(sGap);
+document.getElementById('l-g').textContent='à¸¿'+fmt(sGap);
 document.getElementById('l-e').textContent=fmtM(sEst);
 
-// ── VAT boxes ──
-document.getElementById('vb-ab').textContent='฿'+fmt(sAB);
-document.getElementById('vb-aa').textContent='฿'+fmt(sAA);
-document.getElementById('vb-pb').textContent=(pctB*100).toFixed(1)+'% ของ Target ก่อนVAT';
-document.getElementById('vb-pa').textContent=((sAA/sTA)*100).toFixed(1)+'% ของ Target หลังVAT';
+// ââ VAT boxes ââ
+document.getElementById('vb-ab').textContent='à¸¿'+fmt(sAB);
+document.getElementById('vb-aa').textContent='à¸¿'+fmt(sAA);
+document.getElementById('vb-pb').textContent=(pctB*100).toFixed(1)+'% à¸à¸­à¸ Target à¸à¹à¸­à¸VAT';
+document.getElementById('vb-pa').textContent=((sAA/sTA)*100).toFixed(1)+'% à¸à¸­à¸ Target à¸«à¸¥à¸±à¸VAT';
 
-// ── DONUT ──
+// ââ DONUT ââ
 new Chart(document.getElementById('donutChart'),{
   type:'doughnut',
   data:{datasets:[{
@@ -766,12 +766,12 @@ new Chart(document.getElementById('donutChart'),{
   }]},
   options:{
     cutout:'73%',
-    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataIndex===0?` ทำได้ ฿${fmt(c.raw)}`:`ขาด ฿${fmt(c.raw)}`}}},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataIndex===0?` à¸à¸³à¹à¸à¹ à¸¿${fmt(c.raw)}`:`à¸à¸²à¸ à¸¿${fmt(c.raw)}`}}},
     animation:{animateRotate:true,duration:1000}
   }
 });
 
-// ── BAR (Target / Actual / EST) ──
+// ââ BAR (Target / Actual / EST) ââ
 const bs=[...D].sort((a,b)=>b.pct-a.pct);
 new Chart(document.getElementById('barChart'),{
   type:'bar',
@@ -779,16 +779,16 @@ new Chart(document.getElementById('barChart'),{
     labels:bs.map(b=>b.sh),
     datasets:[
       {label:'Target 100%', data:bs.map(b=>b.tB), backgroundColor:'rgba(203,213,225,.3)', borderColor:'rgba(148,163,184,.7)', borderWidth:1, borderRadius:3, borderSkipped:false},
-      {label:'ยอดขาย ก่อนVAT', data:bs.map(b=>b.aB), backgroundColor:bs.map(b=>pCol(b.pct)+'cc'), borderColor:bs.map(b=>pCol(b.pct)), borderWidth:1.2, borderRadius:3, borderSkipped:false},
-      {label:'ยอดขาย หลังVAT', data:bs.map(b=>b.aA), backgroundColor:'rgba(16,163,127,.18)', borderColor:'rgba(16,163,127,.7)', borderWidth:1, borderRadius:3, borderSkipped:false},
-      {label:'EST สิ้นเดือน', data:bs.map(b=>b.est), backgroundColor:'rgba(217,119,6,.1)', borderColor:'rgba(217,119,6,.85)', borderWidth:1.5, borderRadius:3, borderSkipped:false},
+      {label:'à¸¢à¸­à¸à¸à¸²à¸¢ à¸à¹à¸­à¸VAT', data:bs.map(b=>b.aB), backgroundColor:bs.map(b=>pCol(b.pct)+'cc'), borderColor:bs.map(b=>pCol(b.pct)), borderWidth:1.2, borderRadius:3, borderSkipped:false},
+      {label:'à¸¢à¸­à¸à¸à¸²à¸¢ à¸«à¸¥à¸±à¸VAT', data:bs.map(b=>b.aA), backgroundColor:'rgba(16,163,127,.18)', borderColor:'rgba(16,163,127,.7)', borderWidth:1, borderRadius:3, borderSkipped:false},
+      {label:'EST à¸ªà¸´à¹à¸à¹à¸à¸·à¸­à¸', data:bs.map(b=>b.est), backgroundColor:'rgba(217,119,6,.1)', borderColor:'rgba(217,119,6,.85)', borderWidth:1.5, borderRadius:3, borderSkipped:false},
     ]
   },
   options:{
     responsive:true,
     plugins:{
       legend:{labels:{color:'#64748b',font:{size:9},boxWidth:10,padding:10}},
-      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ฿${fmt(c.raw)}`}}
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: à¸¿${fmt(c.raw)}`}}
     },
     scales:{
       x:{ticks:{color:'#94a3b8',font:{size:8.5},maxRotation:38},grid:{color:'rgba(241,245,249,.8)'},border:{display:false}},
@@ -797,22 +797,22 @@ new Chart(document.getElementById('barChart'),{
   }
 });
 
-// ── MONTHLY CHART ──
+// ââ MONTHLY CHART ââ
 const ms=[...D].sort((a,b)=>b.dift-a.dift);
 new Chart(document.getElementById('monthlyChart'),{
   type:'bar',
   data:{
     labels:ms.map(b=>b.sh),
     datasets:[
-      {label:'FEB (หลังVAT)', data:ms.map(b=>b.feb), backgroundColor:'rgba(100,116,139,.25)', borderColor:'rgba(100,116,139,.55)', borderWidth:1, borderRadius:3, borderSkipped:false},
-      {label:'MAR 1-22 (หลังVAT)', data:ms.map(b=>b.aA), backgroundColor:ms.map(b=>b.dift>=0?'rgba(15,118,110,.6)':'rgba(220,38,38,.45)'), borderColor:ms.map(b=>b.dift>=0?'#0f766e':'#dc2626'), borderWidth:1.2, borderRadius:3, borderSkipped:false},
+      {label:'FEB (à¸«à¸¥à¸±à¸VAT)', data:ms.map(b=>b.feb), backgroundColor:'rgba(100,116,139,.25)', borderColor:'rgba(100,116,139,.55)', borderWidth:1, borderRadius:3, borderSkipped:false},
+      {label:'MAR 1-22 (à¸«à¸¥à¸±à¸VAT)', data:ms.map(b=>b.aA), backgroundColor:ms.map(b=>b.dift>=0?'rgba(15,118,110,.6)':'rgba(220,38,38,.45)'), borderColor:ms.map(b=>b.dift>=0?'#0f766e':'#dc2626'), borderWidth:1.2, borderRadius:3, borderSkipped:false},
     ]
   },
   options:{
     responsive:true,
     plugins:{
       legend:{labels:{color:'#64748b',font:{size:9},boxWidth:10,padding:10}},
-      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ฿${fmt(c.raw)}`}}
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: à¸¿${fmt(c.raw)}`}}
     },
     scales:{
       x:{ticks:{color:'#94a3b8',font:{size:8.5},maxRotation:38},grid:{color:'rgba(241,245,249,.8)'},border:{display:false}},
@@ -821,7 +821,7 @@ new Chart(document.getElementById('monthlyChart'),{
   }
 });
 
-// ── YoY GROWTH CHART ──
+// ââ YoY GROWTH CHART ââ
 const yoySorted=[...D].filter(b=>b.yoyPct!==null).sort((a,b)=>b.yoyPct-a.yoyPct);
 const yoyNew=[...D].filter(b=>b.yoyPct===null);
 const yoyAll=[...yoySorted,...yoyNew];
@@ -840,9 +840,9 @@ function yoyBox(label,val,sub,c){
   </div>`;
 }
 ys.innerHTML=
-  yoyBox('เฉลี่ย YoY',(avgYoy>=0?'+':'')+( avgYoy*100).toFixed(1)+'%','ทั้ง '+yoySorted.length+' สาขา (ไม่รวม New)','#f8fafc')+
-  yoyBox('📈 เติบโต',growCount+' สาขา',best.sh+' +'+( best.yoyPct*100).toFixed(1)+'%','#f0fdf4')+
-  yoyBox('📉 ลดลง',decCount+' สาขา',worst.sh+' '+(worst.yoyPct*100).toFixed(1)+'%','#fff1f2');
+  yoyBox('à¹à¸à¸¥à¸µà¹à¸¢ YoY',(avgYoy>=0?'+':'')+( avgYoy*100).toFixed(1)+'%','à¸à¸±à¹à¸ '+yoySorted.length+' à¸ªà¸²à¸à¸² (à¹à¸¡à¹à¸£à¸§à¸¡ New)','#f8fafc')+
+  yoyBox('ð à¹à¸à¸´à¸à¹à¸',growCount+' à¸ªà¸²à¸à¸²',best.sh+' +'+( best.yoyPct*100).toFixed(1)+'%','#f0fdf4')+
+  yoyBox('ð à¸¥à¸à¸¥à¸',decCount+' à¸ªà¸²à¸à¸²',worst.sh+' '+(worst.yoyPct*100).toFixed(1)+'%','#fff1f2');
 
 new Chart(document.getElementById('yoyChart'),{
   type:'bar',
@@ -867,13 +867,13 @@ new Chart(document.getElementById('yoyChart'),{
           title:ctx=>{const b=yoyAll[ctx[0].dataIndex];return b.name;},
           label:ctx=>{
             const b=yoyAll[ctx.dataIndex];
-            if(b.yoyPct===null) return[' สาขาใหม่ (New Store)',' ยอดขาย MAR 1-22: ฿'+fmt(b.aA)];
+            if(b.yoyPct===null) return[' à¸ªà¸²à¸à¸²à¹à¸«à¸¡à¹ (New Store)',' à¸¢à¸­à¸à¸à¸²à¸¢ MAR 1-22: à¸¿'+fmt(b.aA)];
             const s=b.yoyPct>=0?'+':'';
             return[
               ` YoY: ${s}${(b.yoyPct*100).toFixed(1)}%`,
-              ` ปี 2568 (1-22 มี.ค.): ฿${fmt(b.y25)}`,
-              ` ปี 2569 (1-22 มี.ค.): ฿${fmt(b.aB)}`,
-              ` เปลี่ยน: ${b.aB-b.y25>=0?'+':''}฿${fmt(b.aB-b.y25)}`
+              ` à¸à¸µ 2568 (1-22 à¸¡à¸µ.à¸.): à¸¿${fmt(b.y25)}`,
+              ` à¸à¸µ 2569 (1-22 à¸¡à¸µ.à¸.): à¸¿${fmt(b.aB)}`,
+              ` à¹à¸à¸¥à¸µà¹à¸¢à¸: ${b.aB-b.y25>=0?'+':''}à¸¿${fmt(b.aB-b.y25)}`
             ];
           }
         }
@@ -894,7 +894,7 @@ new Chart(document.getElementById('yoyChart'),{
   }
 });
 
-// ── PROGRESS BARS ──
+// ââ PROGRESS BARS ââ
 const ps=[...D].sort((a,b)=>b.pct-a.pct);
 const pl=document.getElementById('progList');
 ps.forEach(b=>{
@@ -903,16 +903,16 @@ ps.forEach(b=>{
   const dp=b.diftPct!==null?(b.diftPct>=0?'+':'')+(b.diftPct*100).toFixed(1)+'%':'New';
   const dc=b.diftPct===null?'neu':b.diftPct>=0?'pos':'neg';
 
-  // Daily need — negative gap means already exceeded target
+  // Daily need â negative gap means already exceeded target
   const exceeded=b.gap<=0;
   let dailyHtml;
   if(exceeded){
     dailyHtml=`<span style="display:inline-flex;align-items:center;gap:4px;background:#dcfce7;border:1px solid #bbf7d0;border-radius:6px;padding:2px 8px;font-size:9px;font-weight:700;color:#166534;">
-      ✅ เกิน Target แล้ว &nbsp;+฿${fmt(Math.abs(b.gap))} (ก่อนVAT)
+      â à¹à¸à¸´à¸ Target à¹à¸¥à¹à¸§ &nbsp;+à¸¿${fmt(Math.abs(b.gap))} (à¸à¹à¸­à¸VAT)
     </span>`;
   } else {
     dailyHtml=`<span style="display:inline-flex;align-items:center;gap:4px;background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:2px 8px;font-size:9px;font-weight:700;color:#92400e;">
-      🎯 ต้องทำ/วัน &nbsp;<span style="color:#1e40af;">ก่อนVAT ฿${fmt(b.pd)}</span>&nbsp;|&nbsp;<span style="color:#166534;">หลังVAT ฿${fmt(b.pdA)}</span>&nbsp;<span style="font-weight:500;color:#94a3b8;">(${REM} วันที่เหลือ · ขาด ฿${fmt(b.gap)})</span>
+      ð¯ à¸à¹à¸­à¸à¸à¸³/à¸§à¸±à¸ &nbsp;<span style="color:#1e40af;">à¸à¹à¸­à¸VAT à¸¿${fmt(b.pd)}</span>&nbsp;|&nbsp;<span style="color:#166534;">à¸«à¸¥à¸±à¸VAT à¸¿${fmt(b.pdA)}</span>&nbsp;<span style="font-weight:500;color:#94a3b8;">(${REM} à¸§à¸±à¸à¸à¸µà¹à¹à¸«à¸¥à¸·à¸­ Â· à¸à¸²à¸ à¸¿${fmt(b.gap)})</span>
     </span>`;
   }
 
@@ -922,8 +922,8 @@ ps.forEach(b=>{
       <div class="prog-tags">${stTag(b.st)}<span style="font-weight:800;font-size:11px;color:${pCol(b.pct)};margin-left:4px;">${p}</span></div>
     </div>
     <div class="prog-sub">
-      <div><span class="tag tag-b">ก่อนVAT</span> Target ฿${fmt(b.tB)} · ทำ ฿${fmt(b.aB)}</div>
-      <div><span class="tag tag-a">หลังVAT</span> Target ฿${fmt(b.tA)} · ทำ ฿${fmt(b.aA)} &nbsp;|&nbsp; <span class="tag tag-gray">EST ${ep}</span> &nbsp;|&nbsp; MAR vs FEB <span class="${dc}">${dp}</span></div>
+      <div><span class="tag tag-b">à¸à¹à¸­à¸VAT</span> Target à¸¿${fmt(b.tB)} Â· à¸à¸³ à¸¿${fmt(b.aB)}</div>
+      <div><span class="tag tag-a">à¸«à¸¥à¸±à¸VAT</span> Target à¸¿${fmt(b.tA)} Â· à¸à¸³ à¸¿${fmt(b.aA)} &nbsp;|&nbsp; <span class="tag tag-gray">EST ${ep}</span> &nbsp;|&nbsp; MAR vs FEB <span class="${dc}">${dp}</span></div>
     </div>
     <div class="prog-bar" style="margin-bottom:5px;">
       <div class="prog-fill" style="width:${Math.min(b.pct*100,100)}%;background:${pGrad(b.pct)};"></div>
@@ -932,7 +932,7 @@ ps.forEach(b=>{
   </div>`;
 });
 
-// ── TABLE ──
+// ââ TABLE ââ
 const ts=[...D].sort((a,b)=>b.pct-a.pct);
 const tb=document.getElementById('tblBody');
 ts.forEach((b,i)=>{
@@ -946,23 +946,23 @@ ts.forEach((b,i)=>{
   const diftAmt=b.dift>=0?'+'+fmt(b.dift):'-'+fmt(Math.abs(b.dift));
   tb.innerHTML+=`<tr>
     <td class="l"><span class="rn ${nc}">${rk}</span>${b.sh}</td>
-    <td style="color:#1e3a8a;font-weight:700;">฿${fmt(b.tA)}</td>
+    <td style="color:#1e3a8a;font-weight:700;">à¸¿${fmt(b.tA)}</td>
     <td><span class="pill ${pillC(b.pct)}">${p}</span></td>
-    <td style="color:#1d4ed8;font-weight:600;">฿${fmt(b.aB)}</td>
-    <td style="color:#166534;font-weight:600;">฿${fmt(b.aA)}</td>
-    <td style="color:#92400e;font-weight:600;">฿${fmt(b.est)}</td>
-    <td style="color:#0f766e;font-weight:600;">฿${fmt(b.feb)}</td>
+    <td style="color:#1d4ed8;font-weight:600;">à¸¿${fmt(b.aB)}</td>
+    <td style="color:#166534;font-weight:600;">à¸¿${fmt(b.aA)}</td>
+    <td style="color:#92400e;font-weight:600;">à¸¿${fmt(b.est)}</td>
+    <td style="color:#0f766e;font-weight:600;">à¸¿${fmt(b.feb)}</td>
     <td class="${b.dift>=0?'pos':'neg'}">${diftAmt}</td>
     <td class="${dpc}">${dp}</td>
-    <td style="color:#4338ca;font-weight:600;">฿${fmt(b.w1)}</td>
-    <td style="color:#6d28d9;font-weight:600;">฿${fmt(b.w2)}</td>
-    <td style="color:#7c3aed;font-weight:600;">฿${fmt(b.w3)}</td>
+    <td style="color:#4338ca;font-weight:600;">à¸¿${fmt(b.w1)}</td>
+    <td style="color:#6d28d9;font-weight:600;">à¸¿${fmt(b.w2)}</td>
+    <td style="color:#7c3aed;font-weight:600;">à¸¿${fmt(b.w3)}</td>
     <td class="${yyc}">${yy}</td>
     <td>${stTag(b.st)}</td>
   </tr>`;
 });
 
-// ── TAB SWITCHING ──
+// ââ TAB SWITCHING ââ
 let stkChartsInit=false;
 function switchTab(id,btn){
   document.querySelectorAll('.tab-pane').forEach(t=>t.classList.remove('active'));
@@ -975,48 +975,48 @@ function switchTab(id,btn){
 }
 document.getElementById('footer1').style.display='block';
 
-// ── STOCK HOLDING DATA ──
+// ââ STOCK HOLDING DATA ââ
 const KPI=1.0;
 const SD=[
-  {name:"Central ลาดพร้าว",       sh:"ลาดพร้าว",    qty:5212,  val:1264130, ave:1900000, feb:0.8,  mar:0.7,  dift:-0.1},
-  {name:"The Mall งามวงศ์วาน",    sh:"งามวงศ์วาน",  qty:7730,  val:1813274, ave:1300000, feb:1.1,  mar:1.4,  dift:0.3},
-  {name:"Central พิษณุโลก",       sh:"พิษณุโลก",    qty:null,  val:null,    ave:1200000, feb:1.4,  mar:null, dift:null},
-  {name:"Passione ระยอง",         sh:"ระยอง",        qty:8334,  val:1853945, ave:900000,  feb:2.0,  mar:2.1,  dift:0.1},
-  {name:"Central ลำปาง",          sh:"ลำปาง",        qty:8078,  val:1871546, ave:850000,  feb:2.1,  mar:2.2,  dift:0.1},
+  {name:"Central à¸¥à¸²à¸à¸à¸£à¹à¸²à¸§",       sh:"à¸¥à¸²à¸à¸à¸£à¹à¸²à¸§",    qty:5212,  val:1264130, ave:1900000, feb:0.8,  mar:0.7,  dift:-0.1},
+  {name:"The Mall à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸",    sh:"à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸",  qty:7730,  val:1813274, ave:1300000, feb:1.1,  mar:1.4,  dift:0.3},
+  {name:"Central à¸à¸´à¸©à¸à¸¸à¹à¸¥à¸",       sh:"à¸à¸´à¸©à¸à¸¸à¹à¸¥à¸",    qty:null,  val:null,    ave:1200000, feb:1.4,  mar:null, dift:null},
+  {name:"Passione à¸£à¸°à¸¢à¸­à¸",         sh:"à¸£à¸°à¸¢à¸­à¸",        qty:8334,  val:1853945, ave:900000,  feb:2.0,  mar:2.1,  dift:0.1},
+  {name:"Central à¸¥à¸³à¸à¸²à¸",          sh:"à¸¥à¸³à¸à¸²à¸",        qty:8078,  val:1871546, ave:850000,  feb:2.1,  mar:2.2,  dift:0.1},
   {name:"Future Park (Flagship)",  sh:"Future Park",  qty:14198, val:3121401, ave:1900000, feb:1.7,  mar:1.6,  dift:-0.1},
-  {name:"Central เชียงราย",       sh:"เชียงราย",    qty:8003,  val:1720600, ave:950000,  feb:1.6,  mar:1.8,  dift:0.2},
-  {name:"Central ชลบุรี",         sh:"ชลบุรี",      qty:8236,  val:1906225, ave:1040000, feb:1.7,  mar:1.8,  dift:0.1},
-  {name:"BTS หมอชิต",             sh:"BTS หมอชิต",  qty:1148,  val:271850,  ave:250000,  feb:1.1,  mar:1.1,  dift:0.0},
-  {name:"BTS สยาม",               sh:"BTS สยาม",    qty:1847,  val:435290,  ave:250000,  feb:1.8,  mar:1.7,  dift:-0.1},
-  {name:"Central นครสวรรค์",      sh:"นครสวรรค์",   qty:13572, val:2241320, ave:1000000, feb:2.0,  mar:2.2,  dift:0.2},
-  {name:"Robinson ลาดกระบัง",     sh:"ลาดกระบัง",  qty:5576,  val:1229895, ave:900000,  feb:1.4,  mar:1.4,  dift:0.0},
-  {name:"Robinson มุกดาหาร",      sh:"มุกดาหาร",   qty:4426,  val:984625,  ave:675000,  feb:1.6,  mar:1.5,  dift:-0.1},
-  {name:"Robinson สมุทรปราการ",   sh:"สมุทรปราการ", qty:5695,  val:1260294, ave:1300000, feb:1.0,  mar:1.0,  dift:0.0},
-  {name:"Big C ราชดำริ",          sh:"ราชดำริ",     qty:7147,  val:1532015, ave:1070000, feb:1.4,  mar:1.4,  dift:0.0},
+  {name:"Central à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢",       sh:"à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢",    qty:8003,  val:1720600, ave:950000,  feb:1.6,  mar:1.8,  dift:0.2},
+  {name:"Central à¸à¸¥à¸à¸¸à¸£à¸µ",         sh:"à¸à¸¥à¸à¸¸à¸£à¸µ",      qty:8236,  val:1906225, ave:1040000, feb:1.7,  mar:1.8,  dift:0.1},
+  {name:"BTS à¸«à¸¡à¸­à¸à¸´à¸",             sh:"BTS à¸«à¸¡à¸­à¸à¸´à¸",  qty:1148,  val:271850,  ave:250000,  feb:1.1,  mar:1.1,  dift:0.0},
+  {name:"BTS à¸ªà¸¢à¸²à¸¡",               sh:"BTS à¸ªà¸¢à¸²à¸¡",    qty:1847,  val:435290,  ave:250000,  feb:1.8,  mar:1.7,  dift:-0.1},
+  {name:"Central à¸à¸à¸£à¸ªà¸§à¸£à¸£à¸à¹",      sh:"à¸à¸à¸£à¸ªà¸§à¸£à¸£à¸à¹",   qty:13572, val:2241320, ave:1000000, feb:2.0,  mar:2.2,  dift:0.2},
+  {name:"Robinson à¸¥à¸²à¸à¸à¸£à¸°à¸à¸±à¸",     sh:"à¸¥à¸²à¸à¸à¸£à¸°à¸à¸±à¸",  qty:5576,  val:1229895, ave:900000,  feb:1.4,  mar:1.4,  dift:0.0},
+  {name:"Robinson à¸¡à¸¸à¸à¸à¸²à¸«à¸²à¸£",      sh:"à¸¡à¸¸à¸à¸à¸²à¸«à¸²à¸£",   qty:4426,  val:984625,  ave:675000,  feb:1.6,  mar:1.5,  dift:-0.1},
+  {name:"Robinson à¸ªà¸¡à¸¸à¸à¸£à¸à¸£à¸²à¸à¸²à¸£",   sh:"à¸ªà¸¡à¸¸à¸à¸£à¸à¸£à¸²à¸à¸²à¸£", qty:5695,  val:1260294, ave:1300000, feb:1.0,  mar:1.0,  dift:0.0},
+  {name:"Big C à¸£à¸²à¸à¸à¸³à¸£à¸´",          sh:"à¸£à¸²à¸à¸à¸³à¸£à¸´",     qty:7147,  val:1532015, ave:1070000, feb:1.4,  mar:1.4,  dift:0.0},
 ];
 SD.forEach(b=>{
   b.st=b.mar===null?'na':b.mar<=KPI?'pass':b.mar<=1.5?'watch':'fail';
 });
 
 function stkTag(s){
-  return s==='pass'?'<span class="stk-pill stk-pass">✅ ผ่าน KPI</span>'
-        :s==='watch'?'<span class="stk-pill stk-watch">⚠️ ต้องระวัง</span>'
-        :s==='fail'?'<span class="stk-pill stk-fail">🔴 เกิน KPI</span>'
-        :'<span class="stk-pill stk-na">❓ ไม่มีข้อมูล</span>';
+  return s==='pass'?'<span class="stk-pill stk-pass">â à¸à¹à¸²à¸ KPI</span>'
+        :s==='watch'?'<span class="stk-pill stk-watch">â ï¸ à¸à¹à¸­à¸à¸£à¸°à¸§à¸±à¸</span>'
+        :s==='fail'?'<span class="stk-pill stk-fail">ð´ à¹à¸à¸´à¸ KPI</span>'
+        :'<span class="stk-pill stk-na">â à¹à¸¡à¹à¸¡à¸µà¸à¹à¸­à¸¡à¸¹à¸¥</span>';
 }
 
 // Counts
 const passCount=SD.filter(b=>b.st==='pass').length;
 const watchCount=SD.filter(b=>b.st==='watch').length;
 const failCount=SD.filter(b=>b.st==='fail').length;
-document.getElementById('sk-c-pass').textContent=passCount+' สาขา';
-document.getElementById('sk-c-watch').textContent=watchCount+' สาขา';
-document.getElementById('sk-c-fail').textContent=failCount+' สาขา';
-document.getElementById('sk-pass-cnt').textContent=passCount+' / 15 สาขา';
+document.getElementById('sk-c-pass').textContent=passCount+' à¸ªà¸²à¸à¸²';
+document.getElementById('sk-c-watch').textContent=watchCount+' à¸ªà¸²à¸à¸²';
+document.getElementById('sk-c-fail').textContent=failCount+' à¸ªà¸²à¸à¸²';
+document.getElementById('sk-pass-cnt').textContent=passCount+' / 15 à¸ªà¸²à¸à¸²';
 document.getElementById('sk-pass-sub').textContent=
-  (failCount+watchCount)+' สาขา ยังต้องลด Stock · '+failCount+' สาขา เกิน KPI อย่างมีนัยสำคัญ';
+  (failCount+watchCount)+' à¸ªà¸²à¸à¸² à¸¢à¸±à¸à¸à¹à¸­à¸à¸¥à¸ Stock Â· '+failCount+' à¸ªà¸²à¸à¸² à¹à¸à¸´à¸ KPI à¸­à¸¢à¹à¸²à¸à¸¡à¸µà¸à¸±à¸¢à¸ªà¸³à¸à¸±à¸';
 
-// ── STOCK CHARTS (lazy init on tab open) ──
+// ââ STOCK CHARTS (lazy init on tab open) ââ
 function initStkCharts(){
 
   // Bar chart: MAR'26 holding sorted descending
@@ -1052,11 +1052,11 @@ function initStkCharts(){
           title:ctx=>{const b=allBar[ctx[0].dataIndex];return b.name;},
           label:ctx=>{
             const b=allBar[ctx.dataIndex];
-            if(b.mar===null) return[' ไม่มีข้อมูล MAR\'26'];
+            if(b.mar===null) return[' à¹à¸¡à¹à¸¡à¸µà¸à¹à¸­à¸¡à¸¹à¸¥ MAR\'26'];
             return[
-              ` Holding: ${b.mar.toFixed(1)}x  (KPI ≤${KPI}x)`,
-              ` มูลค่า Stock: ฿${fmt(b.val)}`,
-              ` AVE SALE: ฿${fmt(b.ave)}/เดือน`,
+              ` Holding: ${b.mar.toFixed(1)}x  (KPI â¤${KPI}x)`,
+              ` à¸¡à¸¹à¸¥à¸à¹à¸² Stock: à¸¿${fmt(b.val)}`,
+              ` AVE SALE: à¸¿${fmt(b.ave)}/à¹à¸à¸·à¸­à¸`,
               ` DIFT vs FEB: ${b.dift>=0?'+':''}${b.dift.toFixed(1)}`
             ];
           }
@@ -1096,7 +1096,7 @@ function initStkCharts(){
             const b=ds2[ctx.dataIndex];
             const d=ctx.datasetIndex===0?'FEB\'26':'MAR\'26';
             const v=ctx.datasetIndex===0?b.feb:b.mar;
-            return` ${d}: ${v.toFixed(1)}x`+(ctx.datasetIndex===1?`  (Δ ${b.dift>=0?'+':''}${b.dift.toFixed(1)})`:' ');
+            return` ${d}: ${v.toFixed(1)}x`+(ctx.datasetIndex===1?`  (Î ${b.dift>=0?'+':''}${b.dift.toFixed(1)})`:' ');
           }
         }}
       },
@@ -1117,15 +1117,15 @@ function initStkCharts(){
     if(a.mar===null)return 1;if(b.mar===null)return-1;return b.mar-a.mar;
   });
   ts2.forEach((b,i)=>{
-    const diftStr=b.dift!==null?(b.dift>=0?'+':'')+b.dift.toFixed(1)+'x':'–';
+    const diftStr=b.dift!==null?(b.dift>=0?'+':'')+b.dift.toFixed(1)+'x':'â';
     const diftC=b.dift===null?'neu':b.dift>0?'neg':'pos';
     stbl.innerHTML+=`<tr>
       <td class="l"><span class="rn x">${i+1}</span>${b.sh}</td>
-      <td style="color:#334155;font-weight:600;">${b.qty!==null?fmt(b.qty):'–'}</td>
-      <td style="color:#1e3a8a;font-weight:700;">${b.val!==null?'฿'+fmt(b.val):'–'}</td>
-      <td style="color:#0f766e;font-weight:600;">฿${fmt(b.ave)}</td>
-      <td style="color:#64748b;font-weight:600;text-align:center;">${b.feb!==null?b.feb.toFixed(1)+'x':'–'}</td>
-      <td style="text-align:center;font-weight:800;color:${b.mar===null?'#94a3b8':b.st==='pass'?'#16a34a':b.st==='watch'?'#d97706':'#dc2626'};">${b.mar!==null?b.mar.toFixed(1)+'x':'–'}</td>
+      <td style="color:#334155;font-weight:600;">${b.qty!==null?fmt(b.qty):'â'}</td>
+      <td style="color:#1e3a8a;font-weight:700;">${b.val!==null?'à¸¿'+fmt(b.val):'â'}</td>
+      <td style="color:#0f766e;font-weight:600;">à¸¿${fmt(b.ave)}</td>
+      <td style="color:#64748b;font-weight:600;text-align:center;">${b.feb!==null?b.feb.toFixed(1)+'x':'â'}</td>
+      <td style="text-align:center;font-weight:800;color:${b.mar===null?'#94a3b8':b.st==='pass'?'#16a34a':b.st==='watch'?'#d97706':'#dc2626'};">${b.mar!==null?b.mar.toFixed(1)+'x':'â'}</td>
       <td class="${diftC}" style="text-align:center;">${diftStr}</td>
       <td style="text-align:center;">${stkTag(b.st)}</td>
     </tr>`;
